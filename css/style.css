@@ -76,7 +76,7 @@ nav a{
 }
 /* Requirement 2 code here*/
 nav a:hover {
-	text-decoration: underline wavy red;
+	text-decoration: underline wavy black;
   }
 
 a.skip{
@@ -94,13 +94,12 @@ a.skip{
 /* Requirement 4 code here*/
 nav a:focus {
 	border-top: solid 2px yellow; /* 4. */
-	text-decoration: none;
 }
 
 .container{
   /* Requirement 5 code here*/
 	display: grid;
-  width: 100%;
+  /* width: 1000px; */
 	grid-template-columns: 1fr 5fr 1fr;
 	row-gap: 30px;
 }
@@ -123,26 +122,23 @@ nav a:focus {
 
 .about, .clients, .method, .contact {
 display: grid;
-width: 100%;
 grid-column-start: 2;
 position: relative;
 }
 img {
-width: 100%;
 position: absolute;
-
+width: 100%;
 }
 
 .about-image, .clients-image, .method-image, .contact-image {
 display: grid;
-width: 100%;
 grid-column: 1 / 4;
 max-height: 500px;
 overflow: hidden;
 }
 
 .text {
-align-items: center;
+align-self: center;
 max-height: 25vh;
 overflow: scroll;
 }
