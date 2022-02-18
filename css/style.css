@@ -72,11 +72,11 @@ footer a:visited{
 
 /* Requirement 1 code here*/
 nav a{
-  text-decoration: none; /* 1. */
+  text-decoration: none;
 }
 /* Requirement 2 code here*/
 nav a:hover {
-	text-decoration: underline wavy red; /* 2. */
+	text-decoration: underline wavy red;
   }
 
 a.skip{
@@ -100,14 +100,14 @@ nav a:focus {
 .container{
   /* Requirement 5 code here*/
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-column: 1fr 5fr 1fr;
 	grid-row-gap: 30px;
 }
 
 /* Requirements 6-10 here: */
 .intro {
   /* The image used */
-  background-color: #DDDDDD;
+  background-color: #707070;
   background-image: url("../images/header.jpg");
 
   /* Set a specific height */
@@ -164,8 +164,8 @@ overflow: scroll;
     margin-top: 20px;
   }
   .container {
-    grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-column: 50px auto 500px auto 50px;
+    grid-row: 300px 300px 300px 300px;
   }
   .about, .clients, .method, .contact {
     grid-column: 3 / span 2;
