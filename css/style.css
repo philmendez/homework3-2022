@@ -98,11 +98,9 @@ nav a:focus {
 
 .container{
   /* Requirement 5 code here*/
-  /* width: 1000px; */
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
 	row-gap: 30px;
-
 }
 
 /* Requirements 6-10 here: */
@@ -122,7 +120,6 @@ nav a:focus {
 }
 
 .about, .clients, .method, .contact {
-display: grid;
 grid-column-start: 2;
 position: relative;
 }
@@ -133,7 +130,6 @@ width: 100%;
 }
 
 .about-image, .clients-image, .method-image, .contact-image {
-display: grid;
 grid-column: 1 / 4;
 max-height: 500px;
 overflow: hidden;
@@ -167,17 +163,14 @@ overflow: scroll;
     margin-top: 20px;
   }
   .container {
-    display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 300px 300px 300px 300px;
   }
   .about, .clients, .method, .contact {
-    display: grid;
     grid-column: 3 / span 2;
     }
 
     .about-image, .clients-image, .method-image, .contact-image {
-    display: grid;
       grid-column: 2 / span 2;
     }
 }
