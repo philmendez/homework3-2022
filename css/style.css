@@ -120,17 +120,32 @@ nav a:focus {
 }
 
 .about, .clients, .method, .contact {
-grid-column-start: 2;
-position: relative;
+  grid-column: 2 / 3;
 }
-img {
-position: absolute;
-width: 100%;
+.about, .about-image {
+  grid-row: 2 / span 1;
+}
 
+.clients, .clients-image {
+  grid-row: 3 / span 1;
+}
+
+.method, .method-image {
+  grid-row: 4 / span 1;
+}
+
+.contact, .contact-image {
+  grid-row: 5 / span 1;
+}
+
+
+img {
+/* position: absolute; */
+width: 100%;
 }
 
 .about-image, .clients-image, .method-image, .contact-image {
-grid-column: 1 / 4;
+grid-column: 1 / span 3;
 max-height: 500px;
 overflow: hidden;
 }
@@ -139,8 +154,10 @@ overflow: hidden;
 align-self: center;
 max-height: 25vh;
 overflow: scroll;
+padding: 0;
 }
 
+  /* THIS IS WHERE THE DESKTOP VIEW BEGINSSSSSSSSS */
 
 @media screen and (min-width: 700px){
   nav{
@@ -165,6 +182,7 @@ overflow: scroll;
   .container {
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 300px 300px 300px 300px;
+    row-gap: 30px;
   }
   .about, .clients, .method, .contact {
     grid-column: 3 / span 2;
@@ -173,6 +191,43 @@ overflow: scroll;
     .about-image, .clients-image, .method-image, .contact-image {
       grid-column: 2 / span 2;
     }
+    .about {
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 1;
+    }
+
+    .about-image {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 1;
+    }
+
+    .clients {
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 1;
+    }
+    .clients-image {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 1;
+    }
+    .method {
+      grid-column: 3 / span 2;
+      grid-row: 3 / span 1;
+    }
+
+    .method-image {
+      grid-column: 2 / span 2;
+      grid-row: 3 / span 1;
+    }
+    .contact {
+      grid-column: 2 / span 2;
+      grid-row: 4 / span 1;
+    }
+
+    .contact-image {
+      grid-column: 3 / span 2;
+      grid-row: 4 / span 1;
+    }
+
 }
 
 
