@@ -123,19 +123,19 @@ nav a:focus {
   grid-column: 2 / 3;
 }
 .about, .about-image {
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .clients, .clients-image {
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .method, .method-image {
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .contact, .contact-image {
-  grid-row: 5 / span 1;
+  grid-row: 4 / span 1;
 }
 
 
@@ -154,7 +154,7 @@ overflow: hidden;
 align-self: center;
 max-height: 25vh;
 overflow: scroll;
-padding: 0;
+/* padding: 0; */
 }
 
   /* THIS IS WHERE THE DESKTOP VIEW BEGINSSSSSSSSS */
@@ -182,7 +182,7 @@ padding: 0;
   .container {
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 300px 300px 300px 300px;
-    row-gap: 30px;
+    /* row-gap: 30px; */
   }
   .about, .clients, .method, .contact {
     grid-column: 3 / span 2;
